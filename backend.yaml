@@ -59,5 +59,5 @@
         name: all
         login_user: root
         login_password: ExpenseAPP@1
-        login_host: ansible-backend.practice25.online
+        login_host: ansible.mysql.practice25.online
         target: /app/schema/backend.sql
