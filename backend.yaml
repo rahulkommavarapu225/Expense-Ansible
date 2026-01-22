@@ -45,7 +45,7 @@
         src: backend.service
         dest: /etc/systemd/system/backend.service
 
-    - name: install pythin libraries
+    - name: install python libraries
       ansible.builtin.pip:
         name: "{{ item }}"
         executable: pip3.9
