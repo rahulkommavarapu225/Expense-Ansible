@@ -25,7 +25,7 @@
 
     - name: connect to mysql server
       community.mysql.mysql_info:
-        login-user: root
+        login_user: root
         login_password: "{{ mysql_root_password }}"
         login_host: mysqlAnsi.practice25.online
       register: mysql_info
