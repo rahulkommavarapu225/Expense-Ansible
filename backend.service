@@ -3,7 +3,7 @@ Description= Backend service
 
 [Service]
 User=Expense
-Environment=DB_HOST="ansible-backend.practice25.online"
+Environment=DB_HOST="ansible.backend.practice25.online"
 ExecStart=/bin/node /app/index.js
 SyslogIdentifier=backend
 
