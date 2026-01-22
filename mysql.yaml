@@ -14,7 +14,7 @@
         enabled: yes
 
     - name: connect to mysql server
-      community.mysql.mysql-info:
+      community.mysql.mysql_info:
         login-user: root
         login_password: ExpenseAPP@1
         login_host: mysqlAnsi.practice25.online
