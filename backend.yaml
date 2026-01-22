@@ -61,3 +61,10 @@
         login_password: ExpenseAPP@1
         login_host: ansible.mysql.practice25.online
         target: /app/schema/backend.sql
+
+    - name: daemon reload and restart service
+      ansible.builtin.systemd_service:
+        enabled: true
+        state: restart
+        daemon_reload: true
+        name: backend
