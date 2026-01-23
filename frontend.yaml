@@ -2,15 +2,13 @@
   hosts: frontend
   become: yes
   tasks:
-
-    - name : install nginx server
+    - name: install nginx server
       ansible.builtin.dnf:
-      name : nginx
-      state: present
-  
+        name: nginx
+        state: present
 
     - name: enable and start nginx
       ansible.builtin.service:
-      name: nginx
-      enabled: yes
-
+        name: nginx
+        state: started
+        enabled: yes
